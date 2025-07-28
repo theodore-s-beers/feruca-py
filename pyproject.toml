@@ -1,7 +1,7 @@
 [project]
 name = "feruca"
 description = "Python bindings for feruca, a Rust implementation of the Unicode Collation Algorithm"
-authors = [{ name = "Theodore Beers", email = "theo.beers@drexel.edu" }]
+authors = [{ name = "Theodore Beers", email = "theo.beers@fu-berlin.de" }]
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
