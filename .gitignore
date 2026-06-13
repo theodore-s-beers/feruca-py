@@ -67,3 +67,6 @@ docs/_build/
 
 # VSCode
 .vscode/
+
+# Ruff
+.ruff_cache/

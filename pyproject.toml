@@ -4,7 +4,7 @@ description = "Python bindings for feruca, a Rust implementation of the Unicode 
 authors = [{ name = "Theodore Beers", email = "theo.beers@fu-berlin.de" }]
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 classifiers = [
   "Programming Language :: Rust",
   "Programming Language :: Python :: Implementation :: CPython",
@@ -16,11 +16,11 @@ dynamic = ["version"]
 Repository = "https://github.com/theodore-s-beers/feruca-py"
 
 [build-system]
-requires = ["maturin>=1.9,<2.0"]
+requires = ["maturin>=1.14,<2"]
 build-backend = "maturin"
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
 
 [dependency-groups]
-dev = ["maturin>=1.9.2"]
+dev = ["maturin>=1.14,<2", "ruff>=0.15.17", "ty>=0.0.49"]
