@@ -8,5 +8,5 @@ name = "feruca"
 crate-type = ["cdylib"]
 
 [dependencies]
-feruca = "0.11.3"
-pyo3 = "0.25.1"
+feruca = "0.11.5"
+pyo3 = "0.29.0"
