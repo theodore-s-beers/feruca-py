@@ -9,7 +9,7 @@ use pyo3::prelude::*;
 fn collate(mut strings: Vec<String>, tailoring: &str) -> PyResult<Vec<String>> {
     let t: Tailoring = match tailoring {
         "default" => Tailoring::Cldr(Locale::Root),
-        "ArabicFirst" => Tailoring::Cldr(Locale::ArabicScript),
+        "ArabicScript" => Tailoring::Cldr(Locale::ArabicScript),
         "ArabicInterleaved" => Tailoring::Cldr(Locale::ArabicInterleaved),
         _ => return Err(PyValueError::new_err("Invalid tailoring")),
     };
